@@ -1,5 +1,4 @@
-Parse Angular Patch
-=========
+# Parse Angular Patch
 
 Brought to you by the [BRANDiD](https://www.getbrandid.com) team
 
@@ -8,16 +7,32 @@ Brought to you by the [BRANDiD](https://www.getbrandid.com) team
   - Additional (and optional) module to enhance Parse Objects and Collections
 
 
+## Install
 
-How to use
-----
+### Option 1
 
-1. [Grab the latest version of the patch here](https://raw2.github.com/brandid/parse-angular-patch/master/dist/parse-angular.js)
-2. Include the module in your project
+Install via Bower: 
+
+```bash
+bower install parse-angular-patch
+```
+
+### Option 2
+
+Grab the latest version of the patch: [parse-angular.min.js](https://raw2.github.com/brandid/parse-angular-patch/master/dist/parse-angular.min.js)
+
+
+
+##How to use
+
+Include the module in your project:
+
 ```javascript
 angular.module('myApp', ['ngAnimate', 'parse-angular'])
 ```
-3. That's it. How hard was that?! You can now do ANYWHERE in your angular app things such as :
+
+That's it. How hard was that?! You can now do ANYWHERE in your angular app things such as:
+
 ```javascript
 // Queries
 var query = new Parse.Query("Monsters");
@@ -32,11 +47,10 @@ Parse.Cloud.run("myCloudCodeFunction", function(results) {
 });
 ```
 
-  And your scope will always be updated.
+And your scope will always be updated.
   
 
-Wanna build a large Parse+Angular app?
-----
+## Wanna build a large Parse+Angular app?
 
 Wait no more and check our [parse-angular-demo](https://github.com/brandid/parse-angular-demo) project
 
